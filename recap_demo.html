@@ -1,0 +1,31 @@
+
+https://wordpress.org/support/topic/hiding-a-link-behind-recaptcha/
+<html>
+  <head>
+    <title>reCAPTCHA demo: Simple page</title>
+    <script type="text/javascript">
+      var onloadCallback = function() {
+        grecaptcha.render('html_element', {
+          'sitekey' : 'mysitekeyhere'
+        });
+      };
+    </script>
+
+<form action="/email/" method="POST">
+<div id="html_element"></div>
+<input type="submit" value="Get email" />
+
+</form><script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
+</script>
+
+  </head>
+  <body>
+    <form action="?" method="POST">
+      <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+      <br/>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
+
+
