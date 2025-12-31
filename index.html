@@ -4,7 +4,7 @@
 	pixelarity.com | hello@pixelarity.com
 	License: pixelarity.com/license
 -->
-<html>
+<html lang="en">
 	<head>
 		<title>Arthur.MacKeith.info</title>
 		<meta charset="utf-8" />
@@ -27,10 +27,7 @@
 								<li><a  href="#publications"><span>Publications</span></a></li>
 								<li><a  href="#outreach"><span>Outreach</span></a></li>
 								<li><a  href="Arthur_MacKeith_website_cv.pdf"><span>CV</span></a></li>
-								<li>
-									<a href="#footer" ><span>Contact</span></a>
-									
-								</li>
+								<li><a href="#footer" ><span>Contact</span></a></li>
 							</ul>
 						</nav>	
 					</div>
@@ -56,25 +53,45 @@
 					<div class="container">
 						
 						<div class="row aln-center">
-
-
-
-
-
-							<div class="col-4 col-6-medium col-12-small" href="index.html">
+							<div class="col-4 col-6-medium col-12-small">
 
 								<!-- Feature -->
 								<section>
-									<a href="#TBD" class="image featured"><img src="images/square_place_holder.png" alt="" /></a>
+									<a href="#mesophyll3d" class="image featured"><img src="images/demo_plant_tissue_dpm.png" alt="" /></a>
 									<header>
-										<h3>Cell Plasticity in Wound Healing</h3>
+										<h3>Model for Leaf Tissue Growth in 3D</h3>
 									</header>
-									<p>A study of shape change of cells in epithelial wound healing using computational a model.</p>
+									<p> A work in progress... </p>
+								</section>
+
+							</div>
+							<div class="col-4 col-6-medium col-12-small">
+
+								<!-- Feature -->
+								<section>
+									<a href="#dpm_package" class="image featured"><img src="images/dpm_demo_frame.png" alt="" /></a>
+									<header>
+										<h3>Deformable Particle Model Package</h3>
+									</header>
+									<p>A library for deformable particles with shape and interaction potentials, as well as a variety of boundary conditions, and measurement methods. </p>
 								</section>
 
 							</div>
 
-							<div class="col-4 col-6-medium col-12-small" href="index.html">
+							<div class="col-4 col-6-medium col-12-small">
+
+								<!-- Feature -->
+								<section>
+									<a href="#cellplasticity" class="image featured"><img src="images/wound_healing_frame.jpg" alt="" /></a>
+									<header>
+										<h3>Cell Plasticity in Wound Healing</h3>
+									</header>
+									<p>A study of shape change of cells in epithelial wound healing comparing different computational models for different tissue types. </p>
+								</section>
+
+							</div>
+
+							<div class="col-4 col-6-medium col-12-small">
 
 								<!-- Feature -->
 									<section>
@@ -106,7 +123,8 @@
 									<header>
 										<h3>Soft Beam Climbing Robot</h3>
 									</header>
-									<p>I designed and built a beam climbing soft robot that required only a single constant pressure input to locomote. <br><a href="beam_climber.html">Project Page</a></a></p>
+									<p>I designed and built a beam climbing soft robot that required only a single constant pressure input to locomote. <br><a href="beam_climber.html">Project Page</a>
+									</p>
 								</section>
 
 							</div>
@@ -144,11 +162,82 @@
 				</section>
 
 			<!-- Banner -->
-				<section id="banner">
-					<div class="container">
-						<p>Past Research Interests</p>
+			<section id="banner">
+				<div class="container" id="current_research_interests">
+					<p>Current Research Interests</p>
+				</div>
+			</section>
+
+			<section id="main">
+				<div class="container">
+					<div class="row">
+
+						<!-- Content once I have news <div id="content" class="col-8 col-12-medium">-->
+						<div id="content" >
+							<!-- Post -->
+							<article class="box post" id="mesophyll3d">
+								<header>
+									<h2><a>Modeling Leaf Mesophyll Growth in 3D</a></h2>
+								</header>
+								<a  class="image left"><img src="images/demo_plant_tissue_dpm.png" alt="" /></a>
+
+								<p>The main work of my Ph.D. has been developing a model for the growth of leaf mesophyll tissue in 3D. Representing each cell as a triangular mesh with a shape potential the represents the turgor pressure, cell wall strength and plasiticty, and interaction potentials that represent the adhesive bonds between cells, I simulate mesophyll tissue growth from confluent cells to porous mature tissue. This work is in progress.</p>
+								<p>Pictured is a cartoon of a full leaf model in 3D with each cell type in a different color: upper and lower epidermis (gray), palisade mesophyll (green), and spongy mesophyll (blue). The cyan lines are cell-cell bonds.</p>
+							</article>
+
+							<article class="box post" id="dpm_package">
+								<header>
+									<h2><a>Deformable {Particle, Polygon, Polyhedron} Model Package in MATLAB and CUDA</a></h2>
+								</header>
+								<a  class="image left"><img src="images/dpm_demo.gif" alt="" /></a>
+								<p>
+								Collections of deformable media appear accross scales in soft matter and biological physics, from tissues made up of flexible cells to packings of liquid filled pills. To better study these systems the O'Hern group has been working on representing these particles with surface models.
+
+								Publications on this subject include studies of packings in <a href="https://doi.org/10.1103/PhysRevMaterials.5.055605">2D</a> and <a href="https://doi.org/10.1039/d1sm01228b">3D</a>, <a href="https://doi.org/10.1103/PhysRevLett.121.248003">at the jamming transition</a>, <a href="https://doi.org/10.1039/d2sm01079h"> defomable particles in hopper flows</a>, <a href="https://doi.org/10.1039/c9sm00775j">stability of bubbles and emulsions</a>, <a href="https://doi.org/10.1103/PhysRevResearch.6.L012036">wound healing</a>, <a href="https://doi.org/10.1063/5.0209019">cancer invasion</a>, and <a href="https://doi.org/10.1098/rsif.2022.0602">2D mesophyll growth</a>.
+								As well as a <a href="https://jamming.research.yale.edu/files/papers/bk.pdf">book chapter on the model </a>.</p>
+								<p>
+								Along with <a href="">an undergraduate researcher</a>, I am working to implement an efficient, accessible, well tested, and easily modifiable molecular dynamics library containing most (or all) of the deformable particle features used in the O'Hern group.
+								</p>
+								<p>This package will be made availible in the spring of 2026 in MATLAB (and possibly python) with optional CUDA kernels impemented for the most computationally intensive features.</p>
+								<ul class="actions">
+									<!--li><a href="https://github.com/amackeith/tomography_segmentation_and_fitting" class="button icon solid fa-file">GitHub Page</a></!-->
+								</ul>
+							</article>
+
+							<!-- Post -->
+							<article class="box post" id="cellplasticity">
+								<header>
+									<h2><a>Cell Shape Analysis During Wound Healing</a></h2>
+								</header>
+								<a  class="image left"><img src="images/wound_healing_movie.gif" alt="" /></a>
+								Using traditional image analysis methods I tracked cell shape in Drosophila embryonic ectoderm and larval wing disc epithelium as the tissue underwent wound closure. We developed an estimate of the error in 2D boundary length measured from 2D images in order to estimate measurement error. In <a href="https://doi.org/10.1103/PhysRevResearch.6.L012036">this</a> work this analysis is used to comparison elastic and elastoplastic models of wound closure in the two tissues.</p>
+								<ul class="actions">
+									<!--li><a href="https://github.com/amackeith/tomography_segmentation_and_fitting" class="button icon solid fa-file">GitHub Page</a></!-->
+								</ul>
+							</article>
+
+
+
+
+
+
+
+
+
+						</div>
+
+
 					</div>
-				</section>
+				</div>
+
+			</section>
+
+			<!-- Banner -->
+			<section id="banner">
+				<div class="container" id="past_research_interests">
+					<p>Past Research Interests</p>
+				</div>
+			</section>
 
 			<!-- Main -->
 				<section id="main">
@@ -166,7 +255,7 @@
 											<a  class="image left"><img src="images/sofa_movie.gif" alt="" /></a>
                                             At Toyota Technological Institute at Chicago, I developed preliminary tools with <a href="https://scholar.google.com/citations?user=MxantswAAAAJ&hl=en">Charles Schaff</a>, <a  href="https://www.audreysedal.net/">
                                                 Professor Audrey Sedal</a> and <a href="https://ttic.uchicago.edu/~mwalter/">
-                                                Professor Matthew Walter</a> to jointly optimize the design and control of a soft robot using finite element simulations. We used simulation and reinforcement learning to explore, non-linear design and control spaces. The final project can be viewed <a href="https://sites.google.com/ttic.edu/evolving-soft-robots">here</a>.</p>
+                                                Professor Matthew Walter</a> to jointly optimize the design and control of a soft robot using finite element simulations. We used simulation and reinforcement learning to explore, non-linear design and control spaces. The final project can be viewed <a href="https://sites.google.com/ttic.edu/evolving-soft-robots">here</a>.
 											<ul class="actions">
                                                 <!--li><a href="https://github.com/amackeith/tomography_segmentation_and_fitting" class="button icon solid fa-file">GitHub Page</a></!-->
                                             </ul>
@@ -180,7 +269,7 @@
 											</header>
 											<a   class="image left"><img src="images/sands_of_time.gif" alt="" /></a>
 											
-											<p>X-ray tomography reconstruction can give us an excellent view of the mechanical structures within 3D granular packings. Due to the complexities inherent in systems of thousands of particles, granular media remains very difficult to model. At the <a href="http://www.jaegerlab.com">Jaeger Lab</a>, I developed a method to segment and fit the locations and orientations of convex grains from 3D tomography data. Access to grain by grain position and orientation enabled me to analyze both local and global structures and patterns within packings. Gif created by Kieran Murphy.</p>
+											<p>X-ray tomography reconstruction can give us an excellent view of the mechanical structures within 3D granular packings. Due to the complexities inherent in systems of thousands of particles, granular media remains very difficult to model. At the <a href="http://www.jaegerlab.com">Jaeger Lab</a>, I implemented a method to segment and fit the locations and orientations of convex mesoscopic grains from 3D tomography data. Access to grain by grain position and orientation enabled me to analyze both local and global structures and patterns within packings. Gif created by Kieran Murphy.</p>
                                             <p><a href="https://github.com/amackeith/tomography_segmentation_and_fitting">Segmentation and fitting code is available on GitHub.</a></p>
 											<ul class="actions">
 												<li><a href="https://github.com/amackeith/tomography_segmentation_and_fitting" class="button icon solid fa-file">GitHub Page</a></li>
@@ -236,7 +325,7 @@
 													<br>
 												</li>
 
-												<li class="pub">
+												<li class="pub" id="ton_paper">
 													<b>Mechanical Plasticity of Cell Membranes Enhances Epithelial Wound Closure</b>
 													<a href="https://doi.org/10.1103/PhysRevResearch.6.L012036" target="_blank">[DOI]</a>
 													<a href="https://gibbs.ccny.cuny.edu/publications/shattuck/pdf/PRR6(L012036)2024.pdf" target="_blank">[PDF]</a>
@@ -328,7 +417,7 @@
         									<a   class="image left"><img src="images/maybe.JPG" alt="" /></a>
         									
         									<h3>Duckietown + Duckiesky</h3>
-        									<p><a href="duckietown.org">Duckietown</a> is a platform for both education and research. The organization provides low cost robots and open source learning materials to students across the globe, from high schools students new to programming to graduate AI researchers.</p>
+        									<p><a href="https://www.duckietown.org">Duckietown</a> is a platform for both education and research. The organization provides low cost robots and open source learning materials to students across the globe, from high schools students new to programming to graduate AI researchers.</p>
                                             <p><a href="https://sites.brown.edu/duckiesky/">DuckieSky</a> is a new initiative lead by <a href="http://cs.brown.edu/people/stellex/">Professor Stephanie Tellex</a> at Brown that is bringing drones into Duckietown and bringing Duckietown to high school students.</p>
         									<p>My contributions to Duckietown are on DuckieSky, where I have developed the drone control stack. I refactored the drone’s control stack to integrate it with Docker and the existing Duckietown communication and management framework. This drone is now being used to educate high school students in an effort to make robotics and STEM more accessible.</p>
                                             <p>In 2020 refactored the control stack, migrating from python 2 to 3, to be rolled out in conjunction with the next generation of Duckiesky hardware.</p>
